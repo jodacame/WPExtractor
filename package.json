@@ -1,0 +1,28 @@
+{
+  "name": "wpextractor",
+  "version": "1.0.1",
+  "description": "Wordpress Extractor Info: Module for nodejs",
+  "main": "wpextractor.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jodacame/WPExtractor.git"
+  },
+  "keywords": [
+    "wp",
+    "wordpress",
+    "wp-theme",
+    "extractor"
+  ],
+  "author": "Jodacame (https://github.com/jodacame/)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jodacame/WPExtractor/issues"
+  },
+  "homepage": "https://github.com/jodacame/WPExtractor#readme",
+  "dependencies": {
+    "request": "^2.88.0"
+  }
+}
