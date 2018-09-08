@@ -7,12 +7,13 @@ var WPExtractor = function(url){
             if (err) {
                 reject(err);
             } else {
-                let theme = _prepare(response.match(new RegExp('<link.*?href=.*?\/themes\/(.*?)\/.*?>', 'i')))
+                let theme = _prepare(response.match(new RegExp('<link.*?href=.*?\/wp-content/themes\/(.*?)\/.*?>', 'i')))
                 if (theme){
                     get(url + "/wp-content/themes/" + theme + "/style.css?ver=" + new Date().getTime(), function (errStyle, style) {
                         data.theme = {};
                         //data.theme.name = theme;
                         if(style){
+                            
                             let temp = style.split("/*")[1].split("*/")[0].split("\n");
                             let tempKeys = {};
                             temp.forEach( el => {
